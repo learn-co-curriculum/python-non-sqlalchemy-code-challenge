@@ -1,5 +1,10 @@
 # Phase 3 Code Challenge: Articles - without SQLAlchemy (Updated)
 
+upload of pytest
+[Screencast from 06-06-2024 11:17:13 AM.webm](https://github.com/learn-co-curriculum/python-non-sqlalchemy-code-challenge-articles/assets/162307521/06de2ec5-efc3-4eb4-a08b-a65925562a6e)
+
+
+
 In this code challenge, you will be working with a Magazine domain.
 
 We have three models: `Author`, `Article`, and `Magazine`.
