@@ -1,3 +1,7 @@
+[Screencast from 06-06-2024 11:17:13 AM.webm](https://github.com/learn-co-curriculum/python-non-sqlalchemy-code-challenge-articles/assets/162307521/19db8aa9-06cf-4927-b322-bbe36402b25d)
+
+
+
 # Phase 3 Code Challenge: Articles - without SQLAlchemy (Updated)
 
 In this code challenge, you will be working with a Magazine domain.
