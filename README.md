@@ -2,12 +2,12 @@
 
 In this code challenge, you will be working with a Magazine domain.
 
-We have three models: `Author`, `Article`, and `Magazine`.
+We have three models: `author`, `Article`, and `Magazine`.
 
-For our purposes, an `Author` has many `Article`s, a `Magazine` has many
-`Article`s, and `Article`s belong to both `Author` and `Magazine`.
+For our purposes, an `author` has many `Article`s, a `Magazine` has many
+`Article`s, and `Article`s belong to both `author` and `Magazine`.
 
-`Author` - `Magazine` is a many to many relationship.
+`author` - `Magazine` is a many to many relationship.
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you
 start coding_. Remember to identify a single source of truth for your data.
@@ -50,11 +50,11 @@ build out any helper methods if needed.
 
 ### Initializers and Properties
 
-#### Author
+#### author
 
-- `Author __init__(self, name)`
-  - Author is initialized with a name
-- `Author property name`
+- `author __init__(self, name)`
+  - author is initialized with a name
+- `author property name`
   - Returns the author's name
   - Names must be of type `str`
   - Names must be longer than 0 characters
@@ -79,7 +79,7 @@ build out any helper methods if needed.
 #### Article
 
 - `Article __init__(self, author, magazine, title)`
-  - Article is initialized with an `Author` instance, a `Magazine` instance, and
+  - Article is initialized with an `author` instance, a `Magazine` instance, and
     a title.
 - `Article property title`
   - Returns the article's title
@@ -94,19 +94,19 @@ build out any helper methods if needed.
 
 - `Article property author`
   - Returns the author object for that article
-  - Must be of type `Author`
-  - Authors **can be changed** after the article object is initialized
+  - Must be of type `author`
+  - authors **can be changed** after the article object is initialized
 - `Article property magazine`
   - Returns the magazine object for that article
   - Must be of type `Magazine`
   - Magazines **can be changed** after the article object is initialized
 
-#### Author
+#### author
 
-- `Author articles()`
+- `author articles()`
   - Returns a list of all the articles the author has written
   - Must be of type `Article`
-- `Author magazines()`
+- `author magazines()`
   - Returns a **unique** list of magazines for which the author has contributed
     to
   - Must be of type `Magazine`
@@ -118,17 +118,17 @@ build out any helper methods if needed.
   - Must be of type `Article`
 - `Magazine contributors()`
   - Returns a **unique** list of authors who have written for this magazine
-  - Must be of type `Author`
+  - Must be of type `author`
 
 ### Aggregate and Association Methods
 
-#### Author
+#### author
 
-- `Author add_article(magazine, title)`
+- `author add_article(magazine, title)`
   - Receives a `Magazine` instance, and a title as arguments
   - Creates and returns a new `Article` instance and associates it with that
     author, the magazine provided
-- `Author topic_areas()`
+- `author topic_areas()`
   - Returns a **unique** list of strings with the categories of the magazines
     the author has contributed to
   - Returns `None` if the author has no articles
@@ -142,7 +142,7 @@ build out any helper methods if needed.
 - `Magazine contributing_authors()`
   - Returns a list of authors who have written more than 2 articles for the
     magazine
-  - Authors must be of type `Author`
+  - authors must be of type `author`
   - Returns `None` if the magazine has no authors with more than 2 publications
 
 ### Advanced Deliverables
